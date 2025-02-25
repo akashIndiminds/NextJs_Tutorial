@@ -1,0 +1,101 @@
+/* app/settings/settings.css */
+
+/* Container for the entire settings page */
+.settings-container {
+    background-color: #f4f7fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+  }
+  
+  /* Title for Settings */
+  .settings-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Individual setting options */
+  .setting-option {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Setting option labels */
+  .setting-option label {
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  /* Styling for select and input elements */
+  .setting-option select,
+  .setting-option input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+  }
+  
+  /* Focus state for inputs and selects */
+  .setting-option select:focus,
+  .setting-option input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+  }
+  
+  /* Button styling */
+  .save-settings-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for save button */
+  .save-settings-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .settings-container {
+      padding: 20px;
+    }
+  
+    .setting-option {
+      padding: 12px;
+    }
+  
+    .setting-option label {
+      font-size: 14px;
+    }
+  
+    .setting-option select,
+    .setting-option input {
+      width: 100%;
+    }
+  
+    .save-settings-btn {
+      font-size: 14px;
+    }
+  }
+  

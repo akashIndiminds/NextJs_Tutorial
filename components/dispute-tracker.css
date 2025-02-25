@@ -1,0 +1,74 @@
+/* components/dispute-tracker.css */
+.dispute-tracker {
+    width: 100%;
+    overflow-x: auto; /* For smaller screens */
+  }
+  
+  .tracker-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: space-between;
+  }
+  
+  .tracker-item {
+    flex: 1; /* Equal width for all items */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+  }
+  
+  .tracker-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .tracker-item.completed .tracker-label::before {
+    background-color: #4CAF50; /* Green for completed */
+    border: none;
+  }
+  
+  .tracker-item.completed:not(:last-child)::after {
+    background-color: #4CAF50;
+  }
+  
+  .tracker-item.active .tracker-label {
+    font-weight: bold;
+    color: #2196F3; /* Blue for active */
+  }
+  
+  .tracker-item.active .tracker-label::before {
+    background-color: #fff;
+    border: 2px solid #2196F3;
+  }
+  
+  .tracker-label {
+    position: relative;
+    z-index: 2;
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  .tracker-label::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    margin: 0 auto 5px;
+    z-index: 2;
+  }
+  

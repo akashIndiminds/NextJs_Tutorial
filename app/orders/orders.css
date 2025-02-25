@@ -1,0 +1,96 @@
+/* orders.css */
+
+/* Basic styling for the orders container */
+.orders-container {
+    background-color: #f4f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  /* Header styling */
+  .orders-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 12px 20px;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  /* Header row */
+  th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 600;
+  }
+  
+  /* Table rows */
+  tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f8e9;
+    cursor: pointer;
+  }
+  
+  /* Alternate row colors */
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Last row border */
+  tbody tr:last-child {
+    border-bottom: none;
+  }
+  
+  /* Status Colors */
+  .shipped {
+    color: #4CAF50; /* Green for Shipped */
+  }
+  
+  .pending {
+    color: #ff9800; /* Orange for Pending */
+  }
+  
+  .delivered {
+    color: #2196F3; /* Blue for Delivered */
+  }
+/* Center the button container */
+.order-actions {
+    display: flex;                /* Enable flexbox */
+    align-items: center;          /* Vertically center the items */
+    justify-content: center;      /* Horizontally center the items */
+    margin-top: 20px;   
+    color: #2196F3;          /* Add some spacing from the table */
+  }
+  
+  /* Mobile responsiveness */
+  @media screen and (max-width: 768px) {
+    table {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    th, td {
+      padding: 8px 12px;
+    }
+  }
+  

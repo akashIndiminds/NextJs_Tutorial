@@ -1,0 +1,80 @@
+/* app/reports/reports.css */
+
+.reports-container {
+    padding: 20px;
+  }
+  
+  .reports-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Container for all report cards */
+  .report-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Individual report card styling */
+  .report-card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for the report cards */
+  .report-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .report-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .report-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Styling for the reports' statistics (e.g., total sales, total orders) */
+  .report-card p:nth-child(2) {
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  .report-card p:nth-child(3) {
+    font-weight: bold;
+    color: #ff9800;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .reports-container h2 {
+      font-size: 20px;
+    }
+  
+    .report-cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  
+    .report-card h3 {
+      font-size: 18px;
+    }
+  
+    .report-card p {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,104 @@
+/* app/products/products.css */
+
+/* Container for the entire products page */
+.products-container {
+  padding: 20px;
+  background-color: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+
+/* Title for Products Section */
+.products-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Table Styling */
+.products-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Header row styling */
+.products-container th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: 600;
+  padding: 14px 20px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Table cell styling */
+.products-container th,
+.products-container td {
+  padding: 12px 20px;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Styling for even rows for better readability */
+.products-container tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect for rows */
+.products-container tbody tr:hover {
+  background-color: #e6f7e5;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product ID column */
+.products-container td:nth-child(1) {
+  font-weight: 600;
+  color: #2196F3; /* Blue for product IDs */
+}
+
+/* Price column */
+.products-container td:nth-child(3) {
+  font-weight: 500;
+  color: #4CAF50; /* Green for prices */
+}
+
+/* Stock column */
+.products-container td:nth-child(4) {
+  font-weight: 500;
+  color: #FF9800; /* Orange for stock */
+}
+
+/* Border for last row */
+.products-container tbody tr:last-child {
+  border-bottom: none;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .products-container table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .products-container th,
+  .products-container td {
+    padding: 10px 12px;
+  }
+
+  .products-container h2 {
+    font-size: 22px;
+  }
+}

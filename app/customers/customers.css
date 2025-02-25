@@ -1,0 +1,136 @@
+/* app/customers/customers.css */
+
+.customers-container {
+    padding: 20px;
+    background-color: #f4f7fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .customers-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Search Bar */
+  .customer-search {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .customer-search input {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+  }
+  
+  .customer-search input:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+  
+  /* Customer List */
+  .customer-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .customer-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .customer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .customer-info {
+    margin-bottom: 15px;
+  }
+  
+  .customer-info h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .customer-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Action Buttons */
+  .customer-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .customer-actions button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .customer-actions .btn-view {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .customer-actions .btn-view:hover {
+    background-color: #1976D2;
+  }
+  
+  .customer-actions .btn-edit {
+    background-color: #FF9800;
+    color: white;
+  }
+  
+  .customer-actions .btn-edit:hover {
+    background-color: #F57C00;
+  }
+  
+  .customer-actions .btn-delete {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .customer-actions .btn-delete:hover {
+    background-color: #D32F2F;
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .customers-container h2 {
+      font-size: 20px;
+    }
+  
+    .customer-card {
+      width: 100%;
+      max-width: 320px;
+    }
+  
+    .customer-search input {
+      max-width: 100%;
+    }
+  }
+  
